@@ -1,0 +1,1316 @@
+{
+  "betterAuthVersion": "1.7.20",
+  "count": 262,
+  "codes": [
+    {
+      "code": "ACCESS_DENIED",
+      "group": "device-authorization",
+      "message": "Access denied"
+    },
+    {
+      "code": "ACCOUNT_NOT_FOUND",
+      "group": "base",
+      "message": "Account not found"
+    },
+    {
+      "code": "ACCOUNT_TEMPORARILY_LOCKED",
+      "group": "two-factor",
+      "message": "Too many failed verification attempts. Your account is temporarily locked. Please try again later."
+    },
+    {
+      "code": "ALREADY_SUBSCRIBED_PLAN",
+      "group": "stripe",
+      "message": "You're already subscribed to this plan"
+    },
+    {
+      "code": "ANONYMOUS_USERS_CANNOT_SIGN_IN_AGAIN_ANONYMOUSLY",
+      "group": "anonymous",
+      "message": "Anonymous users cannot sign in again anonymously"
+    },
+    {
+      "code": "ASYNC_VALIDATION_NOT_SUPPORTED",
+      "group": "base",
+      "message": "Async validation is not supported"
+    },
+    {
+      "code": "AUTHENTICATION_FAILED",
+      "group": "passkey",
+      "message": "Authentication failed"
+    },
+    {
+      "code": "AUTHENTICATION_REQUIRED",
+      "group": "device-authorization",
+      "message": "Authentication required"
+    },
+    {
+      "code": "AUTHORIZATION_PENDING",
+      "group": "device-authorization",
+      "message": "Authorization pending"
+    },
+    {
+      "code": "AUTHORIZE_REFERENCE_REQUIRED",
+      "group": "stripe",
+      "message": "Organization subscriptions require authorizeReference callback to be configured"
+    },
+    {
+      "code": "AUTH_CANCELLED",
+      "group": "passkey",
+      "message": "Auth cancelled"
+    },
+    {
+      "code": "BACKUP_CODES_NOT_ENABLED",
+      "group": "two-factor",
+      "message": "Backup codes aren't enabled"
+    },
+    {
+      "code": "BANNED_USER",
+      "group": "admin",
+      "message": "You have been banned from this application"
+    },
+    {
+      "code": "BODY_MUST_BE_AN_OBJECT",
+      "group": "base",
+      "message": "Body must be an object"
+    },
+    {
+      "code": "CALLBACK_URL_REQUIRED",
+      "group": "base",
+      "message": "callbackURL is required"
+    },
+    {
+      "code": "CANNOT_DELETE_A_PRE_DEFINED_ROLE",
+      "group": "organization",
+      "message": "Cannot delete a pre-defined role"
+    },
+    {
+      "code": "CHALLENGE_NOT_FOUND",
+      "group": "passkey",
+      "message": "Challenge not found"
+    },
+    {
+      "code": "CHANGE_EMAIL_DISABLED",
+      "group": "base",
+      "message": "Change email is disabled"
+    },
+    {
+      "code": "COULD_NOT_CREATE_SESSION",
+      "group": "anonymous",
+      "message": "Could not create session"
+    },
+    {
+      "code": "CREDENTIAL_ACCOUNT_NOT_FOUND",
+      "group": "base",
+      "message": "Credential account not found"
+    },
+    {
+      "code": "CROSS_SITE_NAVIGATION_LOGIN_BLOCKED",
+      "group": "base",
+      "message": "Cross-site navigation login blocked. This request appears to be a CSRF attack."
+    },
+    {
+      "code": "CUSTOMER_NOT_FOUND",
+      "group": "stripe",
+      "message": "Stripe customer not found for this user"
+    },
+    {
+      "code": "DELETE_ANONYMOUS_USER_DISABLED",
+      "group": "anonymous",
+      "message": "Deleting anonymous users is disabled"
+    },
+    {
+      "code": "DEVICE_CODE_ALREADY_PROCESSED",
+      "group": "device-authorization",
+      "message": "Device code already processed"
+    },
+    {
+      "code": "DEVICE_CODE_NOT_CLAIMED",
+      "group": "device-authorization",
+      "message": "Device code has not been claimed by a verifying session; call `GET /device` with the `user_code` while signed in before approving or denying"
+    },
+    {
+      "code": "EMAIL_ALREADY_VERIFIED",
+      "group": "base",
+      "message": "Email is already verified"
+    },
+    {
+      "code": "EMAIL_CAN_NOT_BE_UPDATED",
+      "group": "base",
+      "message": "Email can not be updated"
+    },
+    {
+      "code": "EMAIL_MISMATCH",
+      "group": "base",
+      "message": "Email mismatch"
+    },
+    {
+      "code": "EMAIL_NOT_VERIFIED",
+      "group": "base",
+      "message": "Email not verified"
+    },
+    {
+      "code": "EMAIL_VERIFICATION_REQUIRED",
+      "group": "stripe",
+      "message": "Email verification is required before you can subscribe to a plan"
+    },
+    {
+      "code": "EMAIL_VERIFICATION_REQUIRED_BEFORE_ACCEPTING_OR_REJECTING_INVITATION",
+      "group": "organization",
+      "message": "Email verification required before accepting or rejecting invitation"
+    },
+    {
+      "code": "EMAIL_VERIFICATION_REQUIRED_FOR_INVITATION",
+      "group": "organization",
+      "message": "Email verification required to view or list invitations for the session email"
+    },
+    {
+      "code": "EXPIRED_DEVICE_CODE",
+      "group": "device-authorization",
+      "message": "Device code has expired"
+    },
+    {
+      "code": "EXPIRED_USER_CODE",
+      "group": "device-authorization",
+      "message": "User code has expired"
+    },
+    {
+      "code": "EXPIRES_IN_IS_TOO_LARGE",
+      "group": "api-key",
+      "message": "The expiresIn is larger than the predefined maximum value."
+    },
+    {
+      "code": "EXPIRES_IN_IS_TOO_SMALL",
+      "group": "api-key",
+      "message": "The expiresIn is smaller than the predefined minimum value."
+    },
+    {
+      "code": "FAILED_TO_CONSTRUCT_STRIPE_EVENT",
+      "group": "stripe",
+      "message": "Failed to construct Stripe event"
+    },
+    {
+      "code": "FAILED_TO_CREATE_SESSION",
+      "group": "base",
+      "message": "Failed to create session"
+    },
+    {
+      "code": "FAILED_TO_CREATE_USER",
+      "group": "base",
+      "message": "Failed to create user"
+    },
+    {
+      "code": "FAILED_TO_CREATE_VERIFICATION",
+      "group": "base",
+      "message": "Unable to create verification"
+    },
+    {
+      "code": "FAILED_TO_DELETE_ANONYMOUS_USER",
+      "group": "anonymous",
+      "message": "Failed to delete anonymous user"
+    },
+    {
+      "code": "FAILED_TO_DELETE_ANONYMOUS_USER_SESSIONS",
+      "group": "anonymous",
+      "message": "Failed to delete anonymous user sessions"
+    },
+    {
+      "code": "FAILED_TO_FETCH_PLANS",
+      "group": "stripe",
+      "message": "Failed to fetch plans"
+    },
+    {
+      "code": "FAILED_TO_GET_SESSION",
+      "group": "base",
+      "message": "Failed to get session"
+    },
+    {
+      "code": "FAILED_TO_GET_USER_INFO",
+      "group": "base",
+      "message": "Failed to get user info"
+    },
+    {
+      "code": "FAILED_TO_RETRIEVE_INVITATION",
+      "group": "organization",
+      "message": "Failed to retrieve invitation"
+    },
+    {
+      "code": "FAILED_TO_UNLINK_LAST_ACCOUNT",
+      "group": "base",
+      "message": "You can't unlink your last account"
+    },
+    {
+      "code": "FAILED_TO_UPDATE_API_KEY",
+      "group": "api-key",
+      "message": "Failed to update API key"
+    },
+    {
+      "code": "FAILED_TO_UPDATE_PASSKEY",
+      "group": "passkey",
+      "message": "Failed to update passkey"
+    },
+    {
+      "code": "FAILED_TO_UPDATE_USER",
+      "group": "base",
+      "message": "Failed to update user"
+    },
+    {
+      "code": "FAILED_TO_VERIFY_REGISTRATION",
+      "group": "passkey",
+      "message": "Failed to verify registration"
+    },
+    {
+      "code": "FIELD_NOT_ALLOWED",
+      "group": "base",
+      "message": "Field not allowed to be set"
+    },
+    {
+      "code": "ID_TOKEN_NOT_SUPPORTED",
+      "group": "base",
+      "message": "id_token not supported"
+    },
+    {
+      "code": "INSUFFICIENT_API_KEY_PERMISSIONS",
+      "group": "api-key",
+      "message": "You do not have permission to perform this action on organization API keys."
+    },
+    {
+      "code": "INVALID_API_KEY",
+      "group": "api-key",
+      "message": "Invalid API key."
+    },
+    {
+      "code": "INVALID_API_KEY_GETTER_RETURN_TYPE",
+      "group": "api-key",
+      "message": "API Key getter returned an invalid key type. Expected string."
+    },
+    {
+      "code": "INVALID_BACKUP_CODE",
+      "group": "two-factor",
+      "message": "Invalid backup code"
+    },
+    {
+      "code": "INVALID_CALLBACK_URL",
+      "group": "base",
+      "message": "Invalid callbackURL"
+    },
+    {
+      "code": "INVALID_CODE",
+      "group": "two-factor",
+      "message": "Invalid code"
+    },
+    {
+      "code": "INVALID_DEVICE_CODE",
+      "group": "device-authorization",
+      "message": "Invalid device code"
+    },
+    {
+      "code": "INVALID_DEVICE_CODE_STATUS",
+      "group": "device-authorization",
+      "message": "Invalid device code status"
+    },
+    {
+      "code": "INVALID_DISPLAY_USERNAME",
+      "group": "username",
+      "message": "Display username is invalid"
+    },
+    {
+      "code": "INVALID_EMAIL",
+      "group": "base",
+      "message": "Invalid email"
+    },
+    {
+      "code": "INVALID_EMAIL_FORMAT",
+      "group": "anonymous",
+      "message": "Email was not generated in a valid format"
+    },
+    {
+      "code": "INVALID_EMAIL_OR_PASSWORD",
+      "group": "base",
+      "message": "Invalid email or password"
+    },
+    {
+      "code": "INVALID_ERROR_CALLBACK_URL",
+      "group": "base",
+      "message": "Invalid errorCallbackURL"
+    },
+    {
+      "code": "INVALID_METADATA_TYPE",
+      "group": "api-key",
+      "message": "metadata must be an object or undefined"
+    },
+    {
+      "code": "INVALID_NAME_LENGTH",
+      "group": "api-key",
+      "message": "The name length is either too large or too small."
+    },
+    {
+      "code": "INVALID_NEW_USER_CALLBACK_URL",
+      "group": "base",
+      "message": "Invalid newUserCallbackURL"
+    },
+    {
+      "code": "INVALID_OAUTH_CONFIGURATION",
+      "group": "generic-oauth",
+      "message": "Invalid OAuth configuration"
+    },
+    {
+      "code": "INVALID_ORIGIN",
+      "group": "base",
+      "message": "Invalid origin"
+    },
+    {
+      "code": "INVALID_OTP",
+      "group": "email-otp",
+      "message": "Invalid OTP"
+    },
+    {
+      "code": "INVALID_PASSWORD",
+      "group": "base",
+      "message": "Invalid password"
+    },
+    {
+      "code": "INVALID_PHONE_NUMBER",
+      "group": "phone-number",
+      "message": "Invalid phone number"
+    },
+    {
+      "code": "INVALID_PHONE_NUMBER_OR_PASSWORD",
+      "group": "phone-number",
+      "message": "Invalid phone number or password"
+    },
+    {
+      "code": "INVALID_PREFIX_LENGTH",
+      "group": "api-key",
+      "message": "The prefix length is either too large or too small."
+    },
+    {
+      "code": "INVALID_REDIRECT_URL",
+      "group": "base",
+      "message": "Invalid redirectURL"
+    },
+    {
+      "code": "INVALID_REFERENCE_ID_FROM_API_KEY",
+      "group": "api-key",
+      "message": "The reference id from the API key is invalid."
+    },
+    {
+      "code": "INVALID_REMAINING",
+      "group": "api-key",
+      "message": "The remaining count is either too large or too small."
+    },
+    {
+      "code": "INVALID_REQUEST_BODY",
+      "group": "stripe",
+      "message": "Invalid request body"
+    },
+    {
+      "code": "INVALID_RESOURCE",
+      "group": "organization",
+      "message": "The provided permission includes an invalid resource"
+    },
+    {
+      "code": "INVALID_ROLE_TYPE",
+      "group": "admin",
+      "message": "Invalid role type"
+    },
+    {
+      "code": "INVALID_SESSION_TOKEN",
+      "group": "multi-session",
+      "message": "Invalid session token"
+    },
+    {
+      "code": "INVALID_TEAM_ID",
+      "group": "organization",
+      "message": "Team id contains a reserved character"
+    },
+    {
+      "code": "INVALID_TOKEN",
+      "group": "base",
+      "message": "Invalid token"
+    },
+    {
+      "code": "INVALID_TWO_FACTOR_COOKIE",
+      "group": "two-factor",
+      "message": "Invalid two factor cookie"
+    },
+    {
+      "code": "INVALID_USER",
+      "group": "base",
+      "message": "Invalid user"
+    },
+    {
+      "code": "INVALID_USERNAME",
+      "group": "username",
+      "message": "Username is invalid"
+    },
+    {
+      "code": "INVALID_USERNAME_OR_PASSWORD",
+      "group": "username",
+      "message": "Invalid username or password"
+    },
+    {
+      "code": "INVALID_USER_CODE",
+      "group": "device-authorization",
+      "message": "Invalid user code"
+    },
+    {
+      "code": "INVALID_USER_ID_FROM_API_KEY",
+      "group": "api-key",
+      "message": "The user id from the API key is invalid."
+    },
+    {
+      "code": "INVITATION_LIMIT_REACHED",
+      "group": "organization",
+      "message": "Invitation limit reached"
+    },
+    {
+      "code": "INVITATION_NOT_FOUND",
+      "group": "organization",
+      "message": "Invitation not found"
+    },
+    {
+      "code": "INVITER_IS_NO_LONGER_A_MEMBER_OF_THE_ORGANIZATION",
+      "group": "organization",
+      "message": "Inviter is no longer a member of the organization"
+    },
+    {
+      "code": "KEY_DISABLED",
+      "group": "api-key",
+      "message": "API Key is disabled"
+    },
+    {
+      "code": "KEY_DISABLED_EXPIRATION",
+      "group": "api-key",
+      "message": "Custom key expiration values are disabled."
+    },
+    {
+      "code": "KEY_EXPIRED",
+      "group": "api-key",
+      "message": "API Key has expired"
+    },
+    {
+      "code": "KEY_NOT_FOUND",
+      "group": "api-key",
+      "message": "API Key not found"
+    },
+    {
+      "code": "KEY_NOT_RECOVERABLE",
+      "group": "api-key",
+      "message": "API Key is not recoverable"
+    },
+    {
+      "code": "LINKED_ACCOUNT_ALREADY_EXISTS",
+      "group": "base",
+      "message": "Linked account already exists"
+    },
+    {
+      "code": "MEMBER_NOT_FOUND",
+      "group": "organization",
+      "message": "Member not found"
+    },
+    {
+      "code": "METADATA_DISABLED",
+      "group": "api-key",
+      "message": "Metadata is disabled."
+    },
+    {
+      "code": "METHOD_NOT_ALLOWED_DEFER_SESSION_REQUIRED",
+      "group": "base",
+      "message": "POST method requires deferSessionRefresh to be enabled in session config"
+    },
+    {
+      "code": "MISSING_AC_INSTANCE",
+      "group": "organization",
+      "message": "Dynamic Access Control requires a pre-defined ac instance on the server auth plugin. Read server logs for more information"
+    },
+    {
+      "code": "MISSING_FIELD",
+      "group": "base",
+      "message": "Field is required"
+    },
+    {
+      "code": "MISSING_OR_NULL_ORIGIN",
+      "group": "base",
+      "message": "Missing or null Origin"
+    },
+    {
+      "code": "MISSING_RESPONSE",
+      "group": "captcha",
+      "message": "Missing CAPTCHA response"
+    },
+    {
+      "code": "MISSING_SECRET_KEY",
+      "group": "captcha",
+      "message": "Missing secret key"
+    },
+    {
+      "code": "NAME_REQUIRED",
+      "group": "api-key",
+      "message": "API Key name is required."
+    },
+    {
+      "code": "NO_ACTIVE_ORGANIZATION",
+      "group": "organization",
+      "message": "No active organization"
+    },
+    {
+      "code": "NO_DATA_TO_UPDATE",
+      "group": "admin",
+      "message": "No data to update"
+    },
+    {
+      "code": "NO_DEFAULT_API_KEY_CONFIGURATION_FOUND",
+      "group": "api-key",
+      "message": "No default api-key configuration found."
+    },
+    {
+      "code": "NO_VALUES_TO_UPDATE",
+      "group": "api-key",
+      "message": "No values to update."
+    },
+    {
+      "code": "ORGANIZATION_ALREADY_EXISTS",
+      "group": "organization",
+      "message": "Organization already exists"
+    },
+    {
+      "code": "ORGANIZATION_HAS_ACTIVE_SUBSCRIPTION",
+      "group": "stripe",
+      "message": "Cannot delete organization with active subscription"
+    },
+    {
+      "code": "ORGANIZATION_ID_REQUIRED",
+      "group": "api-key",
+      "message": "Organization ID is required for organization-owned API keys."
+    },
+    {
+      "code": "ORGANIZATION_MEMBERSHIP_LIMIT_REACHED",
+      "group": "organization",
+      "message": "Organization membership limit reached"
+    },
+    {
+      "code": "ORGANIZATION_NOT_FOUND",
+      "group": "organization",
+      "message": "Organization not found"
+    },
+    {
+      "code": "ORGANIZATION_PLUGIN_REQUIRED",
+      "group": "api-key",
+      "message": "Organization plugin is required for organization-owned API keys. Please install and configure the organization plugin."
+    },
+    {
+      "code": "ORGANIZATION_REFERENCE_ID_REQUIRED",
+      "group": "stripe",
+      "message": "Reference ID is required. Provide referenceId or set activeOrganizationId in session"
+    },
+    {
+      "code": "ORGANIZATION_SLUG_ALREADY_TAKEN",
+      "group": "organization",
+      "message": "Organization slug already taken"
+    },
+    {
+      "code": "ORGANIZATION_SUBSCRIPTION_NOT_ENABLED",
+      "group": "stripe",
+      "message": "Organization subscription is not enabled"
+    },
+    {
+      "code": "ORIGIN_NOT_CONFIGURED",
+      "group": "passkey",
+      "message": "Passkey origin is not configured. Set the `origin` option of the passkey plugin or configure `baseURL`."
+    },
+    {
+      "code": "OTP_EXPIRED",
+      "group": "email-otp",
+      "message": "OTP expired"
+    },
+    {
+      "code": "OTP_HAS_EXPIRED",
+      "group": "two-factor",
+      "message": "OTP has expired"
+    },
+    {
+      "code": "OTP_NOT_CONFIGURED",
+      "group": "two-factor",
+      "message": "OTP is not available"
+    },
+    {
+      "code": "OTP_NOT_ENABLED",
+      "group": "two-factor",
+      "message": "OTP not enabled"
+    },
+    {
+      "code": "OTP_NOT_FOUND",
+      "group": "phone-number",
+      "message": "OTP not found"
+    },
+    {
+      "code": "PASSKEY_NOT_FOUND",
+      "group": "passkey",
+      "message": "Passkey not found"
+    },
+    {
+      "code": "PASSWORD_ALREADY_SET",
+      "group": "base",
+      "message": "User already has a password set"
+    },
+    {
+      "code": "PASSWORD_CANNOT_BE_UPDATED_VIA_UPDATE_USER",
+      "group": "admin",
+      "message": "Password cannot be updated through update-user. Use the set-user-password endpoint instead"
+    },
+    {
+      "code": "PASSWORD_TOO_LONG",
+      "group": "base",
+      "message": "Password too long"
+    },
+    {
+      "code": "PASSWORD_TOO_SHORT",
+      "group": "base",
+      "message": "Password too short"
+    },
+    {
+      "code": "PHONE_NUMBER_CANNOT_BE_SET",
+      "group": "phone-number",
+      "message": "Phone number can only be set by verifying it"
+    },
+    {
+      "code": "PHONE_NUMBER_CANNOT_BE_UPDATED",
+      "group": "phone-number",
+      "message": "Phone number cannot be updated"
+    },
+    {
+      "code": "PHONE_NUMBER_EXIST",
+      "group": "phone-number",
+      "message": "Phone number already exists"
+    },
+    {
+      "code": "PHONE_NUMBER_NOT_EXIST",
+      "group": "phone-number",
+      "message": "phone number isn't registered"
+    },
+    {
+      "code": "PHONE_NUMBER_NOT_VERIFIED",
+      "group": "phone-number",
+      "message": "Phone number not verified"
+    },
+    {
+      "code": "PHONE_NUMBER_PENDING_VERIFICATION",
+      "group": "phone-number",
+      "message": "Phone number requires account ownership proof"
+    },
+    {
+      "code": "POLLING_TOO_FREQUENTLY",
+      "group": "device-authorization",
+      "message": "Polling too frequently"
+    },
+    {
+      "code": "POPUP_BLOCKED",
+      "group": "oauth-popup",
+      "message": "Sign-in popup was blocked by the browser"
+    },
+    {
+      "code": "POPUP_CLOSED",
+      "group": "oauth-popup",
+      "message": "Sign-in popup was closed before completing"
+    },
+    {
+      "code": "POPUP_SIGN_IN_FAILED",
+      "group": "oauth-popup",
+      "message": "Popup sign-in failed"
+    },
+    {
+      "code": "POPUP_TIMEOUT",
+      "group": "oauth-popup",
+      "message": "Sign-in popup timed out"
+    },
+    {
+      "code": "PREVIOUSLY_REGISTERED",
+      "group": "passkey",
+      "message": "Previously registered"
+    },
+    {
+      "code": "PROVIDER_NOT_FOUND",
+      "group": "base",
+      "message": "Provider not found"
+    },
+    {
+      "code": "RATE_LIMIT_EXCEEDED",
+      "group": "api-key",
+      "message": "Rate limit exceeded."
+    },
+    {
+      "code": "REFERENCE_ID_NOT_ALLOWED",
+      "group": "stripe",
+      "message": "Reference id is not allowed"
+    },
+    {
+      "code": "REFILL_AMOUNT_AND_INTERVAL_REQUIRED",
+      "group": "api-key",
+      "message": "refillAmount is required when refillInterval is provided"
+    },
+    {
+      "code": "REFILL_INTERVAL_AND_AMOUNT_REQUIRED",
+      "group": "api-key",
+      "message": "refillInterval is required when refillAmount is provided"
+    },
+    {
+      "code": "REGISTRATION_CANCELLED",
+      "group": "passkey",
+      "message": "Registration cancelled"
+    },
+    {
+      "code": "RESOLVED_USER_INVALID",
+      "group": "passkey",
+      "message": "Resolved user is invalid"
+    },
+    {
+      "code": "RESOLVE_USER_REQUIRED",
+      "group": "passkey",
+      "message": "Passkey registration requires either an authenticated session or a resolveUser callback when requireSession is false"
+    },
+    {
+      "code": "ROLE_IS_ASSIGNED_TO_MEMBERS",
+      "group": "organization",
+      "message": "Cannot delete a role that is assigned to members. Please reassign the members to a different role first"
+    },
+    {
+      "code": "ROLE_NAME_IS_ALREADY_TAKEN",
+      "group": "organization",
+      "message": "That role name is already taken"
+    },
+    {
+      "code": "ROLE_NOT_FOUND",
+      "group": "organization",
+      "message": "Role not found"
+    },
+    {
+      "code": "SEND_OTP_NOT_IMPLEMENTED",
+      "group": "phone-number",
+      "message": "sendOTP not implemented"
+    },
+    {
+      "code": "SERVER_ONLY_PROPERTY",
+      "group": "api-key",
+      "message": "The property you're trying to set can only be set from the server auth instance only."
+    },
+    {
+      "code": "SERVICE_UNAVAILABLE",
+      "group": "captcha",
+      "message": "CAPTCHA service unavailable"
+    },
+    {
+      "code": "SESSION_EXPIRED",
+      "group": "base",
+      "message": "Session expired. Re-authenticate to perform this action."
+    },
+    {
+      "code": "SESSION_NOT_FRESH",
+      "group": "base",
+      "message": "Session is not fresh"
+    },
+    {
+      "code": "SESSION_REQUIRED",
+      "group": "passkey",
+      "message": "Passkey registration requires an authenticated session"
+    },
+    {
+      "code": "SOCIAL_ACCOUNT_ALREADY_LINKED",
+      "group": "base",
+      "message": "Social account already linked"
+    },
+    {
+      "code": "STRIPE_SIGNATURE_NOT_FOUND",
+      "group": "stripe",
+      "message": "Stripe signature not found"
+    },
+    {
+      "code": "STRIPE_WEBHOOK_ERROR",
+      "group": "stripe",
+      "message": "Stripe webhook error"
+    },
+    {
+      "code": "STRIPE_WEBHOOK_SECRET_NOT_FOUND",
+      "group": "stripe",
+      "message": "Stripe webhook secret not found"
+    },
+    {
+      "code": "SUBSCRIPTION_NOT_ACTIVE",
+      "group": "stripe",
+      "message": "Subscription is not active"
+    },
+    {
+      "code": "SUBSCRIPTION_NOT_FOUND",
+      "group": "stripe",
+      "message": "Subscription not found"
+    },
+    {
+      "code": "SUBSCRIPTION_NOT_PENDING_CHANGE",
+      "group": "stripe",
+      "message": "Subscription has no pending cancellation or scheduled plan change"
+    },
+    {
+      "code": "SUBSCRIPTION_NOT_SCHEDULED_FOR_CANCELLATION",
+      "group": "stripe",
+      "message": "Subscription is not scheduled for cancellation"
+    },
+    {
+      "code": "SUBSCRIPTION_PLAN_NOT_FOUND",
+      "group": "stripe",
+      "message": "Subscription plan not found"
+    },
+    {
+      "code": "TEAM_ALREADY_EXISTS",
+      "group": "organization",
+      "message": "Team already exists"
+    },
+    {
+      "code": "TEAM_MEMBER_LIMIT_REACHED",
+      "group": "organization",
+      "message": "Team member limit reached"
+    },
+    {
+      "code": "TEAM_NOT_FOUND",
+      "group": "organization",
+      "message": "Team not found"
+    },
+    {
+      "code": "TOKEN_EXPIRED",
+      "group": "base",
+      "message": "Token expired"
+    },
+    {
+      "code": "TOKEN_URL_NOT_FOUND",
+      "group": "generic-oauth",
+      "message": "Invalid OAuth configuration. Token URL not found."
+    },
+    {
+      "code": "TOO_MANY_ATTEMPTS",
+      "group": "email-otp",
+      "message": "Too many attempts"
+    },
+    {
+      "code": "TOO_MANY_ATTEMPTS_REQUEST_NEW_CODE",
+      "group": "two-factor",
+      "message": "Too many attempts. Please request a new code."
+    },
+    {
+      "code": "TOO_MANY_ROLES",
+      "group": "organization",
+      "message": "This organization has too many roles"
+    },
+    {
+      "code": "TOTP_ALREADY_ENABLED",
+      "group": "two-factor",
+      "message": "TOTP is already enabled"
+    },
+    {
+      "code": "TOTP_NOT_CONFIGURED",
+      "group": "two-factor",
+      "message": "TOTP is not available"
+    },
+    {
+      "code": "TOTP_NOT_ENABLED",
+      "group": "two-factor",
+      "message": "TOTP not enabled"
+    },
+    {
+      "code": "TWO_FACTOR_NOT_ENABLED",
+      "group": "two-factor",
+      "message": "Two factor isn't enabled"
+    },
+    {
+      "code": "UNABLE_TO_CREATE_BILLING_PORTAL",
+      "group": "stripe",
+      "message": "Unable to create billing portal session"
+    },
+    {
+      "code": "UNABLE_TO_CREATE_CUSTOMER",
+      "group": "stripe",
+      "message": "Unable to create customer"
+    },
+    {
+      "code": "UNABLE_TO_CREATE_SESSION",
+      "group": "passkey",
+      "message": "Unable to create session"
+    },
+    {
+      "code": "UNABLE_TO_REMOVE_LAST_TEAM",
+      "group": "organization",
+      "message": "Unable to remove last team"
+    },
+    {
+      "code": "UNAUTHORIZED",
+      "group": "stripe",
+      "message": "Unauthorized access"
+    },
+    {
+      "code": "UNAUTHORIZED_SESSION",
+      "group": "api-key",
+      "message": "Unauthorized or invalid session"
+    },
+    {
+      "code": "UNEXPECTED_ERROR",
+      "group": "phone-number",
+      "message": "Unexpected error"
+    },
+    {
+      "code": "UNKNOWN_ERROR",
+      "group": "captcha",
+      "message": "Something went wrong"
+    },
+    {
+      "code": "USAGE_EXCEEDED",
+      "group": "api-key",
+      "message": "API Key has reached its usage limit"
+    },
+    {
+      "code": "USERNAME_IS_ALREADY_TAKEN",
+      "group": "username",
+      "message": "Username is already taken. Please try another."
+    },
+    {
+      "code": "USERNAME_IS_IMMUTABLE",
+      "group": "username",
+      "message": "Username cannot be updated"
+    },
+    {
+      "code": "USERNAME_TOO_LONG",
+      "group": "username",
+      "message": "Username is too long"
+    },
+    {
+      "code": "USERNAME_TOO_SHORT",
+      "group": "username",
+      "message": "Username is too short"
+    },
+    {
+      "code": "USER_ALREADY_EXISTS",
+      "group": "base",
+      "message": "User already exists."
+    },
+    {
+      "code": "USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL",
+      "group": "base",
+      "message": "User already exists. Use another email."
+    },
+    {
+      "code": "USER_ALREADY_HAS_PASSWORD",
+      "group": "base",
+      "message": "User already has a password. Provide that to delete the account."
+    },
+    {
+      "code": "USER_BANNED",
+      "group": "api-key",
+      "message": "User is banned"
+    },
+    {
+      "code": "USER_EMAIL_NOT_FOUND",
+      "group": "base",
+      "message": "User email not found"
+    },
+    {
+      "code": "USER_ID_CANNOT_BE_UPDATED",
+      "group": "admin",
+      "message": "User id cannot be updated"
+    },
+    {
+      "code": "USER_IS_ALREADY_A_MEMBER_OF_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "User is already a member of this organization"
+    },
+    {
+      "code": "USER_IS_ALREADY_INVITED_TO_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "User is already invited to this organization"
+    },
+    {
+      "code": "USER_IS_NOT_ANONYMOUS",
+      "group": "anonymous",
+      "message": "User is not anonymous"
+    },
+    {
+      "code": "USER_IS_NOT_A_MEMBER_OF_THE_ORGANIZATION",
+      "group": "organization",
+      "message": "User is not a member of the organization"
+    },
+    {
+      "code": "USER_IS_NOT_A_MEMBER_OF_THE_TEAM",
+      "group": "organization",
+      "message": "User is not a member of the team"
+    },
+    {
+      "code": "USER_NOT_FOUND",
+      "group": "base",
+      "message": "User not found"
+    },
+    {
+      "code": "USER_NOT_MEMBER_OF_ORGANIZATION",
+      "group": "api-key",
+      "message": "You are not a member of the organization that owns this API key."
+    },
+    {
+      "code": "VALIDATION_ERROR",
+      "group": "base",
+      "message": "Validation Error"
+    },
+    {
+      "code": "VERIFICATION_EMAIL_NOT_ENABLED",
+      "group": "base",
+      "message": "Verification email isn't enabled"
+    },
+    {
+      "code": "VERIFICATION_FAILED",
+      "group": "captcha",
+      "message": "Captcha verification failed"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_ACCESS_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to access this organization as an owner"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_BAN_USERS",
+      "group": "admin",
+      "message": "You are not allowed to ban users"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CANCEL_THIS_INVITATION",
+      "group": "organization",
+      "message": "You are not allowed to cancel this invitation"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CHANGE_USERS_ROLE",
+      "group": "admin",
+      "message": "You are not allowed to change users role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to create a new organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_TEAM",
+      "group": "organization",
+      "message": "You are not allowed to create a new team"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_A_NEW_TEAM_MEMBER",
+      "group": "organization",
+      "message": "You are not allowed to create a new member"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to create a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_TEAMS_IN_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to create teams in this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_CREATE_USERS",
+      "group": "admin",
+      "message": "You are not allowed to create users"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to delete a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_TEAMS_IN_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to delete teams in this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_MEMBER",
+      "group": "organization",
+      "message": "You are not allowed to delete this member"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to delete this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_THIS_TEAM",
+      "group": "organization",
+      "message": "You are not allowed to delete this team"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_DELETE_USERS",
+      "group": "admin",
+      "message": "You are not allowed to delete users"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_GET_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to get a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_GET_USER",
+      "group": "admin",
+      "message": "You are not allowed to get user"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_IMPERSONATE_USERS",
+      "group": "admin",
+      "message": "You are not allowed to impersonate users"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_INVITE_USERS_TO_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to invite users to this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_INVITE_USER_WITH_THIS_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to invite a user with this role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_LIST_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to list a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_LIST_INVITATIONS",
+      "group": "organization",
+      "message": "You are not allowed to list invitations for this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_LIST_USERS",
+      "group": "admin",
+      "message": "You are not allowed to list users"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_LIST_USERS_SESSIONS",
+      "group": "admin",
+      "message": "You are not allowed to list users sessions"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_READ_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to read a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_REGISTER_THIS_PASSKEY",
+      "group": "passkey",
+      "message": "You are not allowed to register this passkey"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_REMOVE_A_TEAM_MEMBER",
+      "group": "organization",
+      "message": "You are not allowed to remove a team member"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_REVOKE_USERS_SESSIONS",
+      "group": "admin",
+      "message": "You are not allowed to revoke users sessions"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_SET_NON_EXISTENT_VALUE",
+      "group": "admin",
+      "message": "You are not allowed to set a non-existent role value"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_SET_USERS_EMAIL",
+      "group": "admin",
+      "message": "You are not allowed to update users email"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_SET_USERS_PASSWORD",
+      "group": "admin",
+      "message": "You are not allowed to set users password"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_SET_USERS_PHONE_NUMBER",
+      "group": "admin",
+      "message": "You are not allowed to update users phone number"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_UPDATE_A_ROLE",
+      "group": "organization",
+      "message": "You are not allowed to update a role"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_MEMBER",
+      "group": "organization",
+      "message": "You are not allowed to update this member"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not allowed to update this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_UPDATE_THIS_TEAM",
+      "group": "organization",
+      "message": "You are not allowed to update this team"
+    },
+    {
+      "code": "YOU_ARE_NOT_ALLOWED_TO_UPDATE_USERS",
+      "group": "admin",
+      "message": "You are not allowed to update users"
+    },
+    {
+      "code": "YOU_ARE_NOT_A_MEMBER_OF_THIS_ORGANIZATION",
+      "group": "organization",
+      "message": "You are not a member of this organization"
+    },
+    {
+      "code": "YOU_ARE_NOT_THE_RECIPIENT_OF_THE_INVITATION",
+      "group": "organization",
+      "message": "You are not the recipient of the invitation"
+    },
+    {
+      "code": "YOU_CANNOT_BAN_YOURSELF",
+      "group": "admin",
+      "message": "You cannot ban yourself"
+    },
+    {
+      "code": "YOU_CANNOT_IMPERSONATE_ADMINS",
+      "group": "admin",
+      "message": "You cannot impersonate admins"
+    },
+    {
+      "code": "YOU_CANNOT_LEAVE_THE_ORGANIZATION_AS_THE_ONLY_OWNER",
+      "group": "organization",
+      "message": "You cannot leave the organization as the only owner"
+    },
+    {
+      "code": "YOU_CANNOT_LEAVE_THE_ORGANIZATION_WITHOUT_AN_OWNER",
+      "group": "organization",
+      "message": "You cannot leave the organization without an owner"
+    },
+    {
+      "code": "YOU_CANNOT_REMOVE_YOURSELF",
+      "group": "admin",
+      "message": "You cannot remove yourself"
+    },
+    {
+      "code": "YOU_CAN_NOT_ACCESS_THE_MEMBERS_OF_THIS_TEAM",
+      "group": "organization",
+      "message": "You are not allowed to list the members of this team"
+    },
+    {
+      "code": "YOU_DO_NOT_HAVE_AN_ACTIVE_TEAM",
+      "group": "organization",
+      "message": "You do not have an active team"
+    },
+    {
+      "code": "YOU_HAVE_REACHED_THE_MAXIMUM_NUMBER_OF_ORGANIZATIONS",
+      "group": "organization",
+      "message": "You have reached the maximum number of organizations"
+    },
+    {
+      "code": "YOU_HAVE_REACHED_THE_MAXIMUM_NUMBER_OF_TEAMS",
+      "group": "organization",
+      "message": "You have reached the maximum number of teams"
+    },
+    {
+      "code": "YOU_MUST_BE_IN_AN_ORGANIZATION_TO_CREATE_A_ROLE",
+      "group": "organization",
+      "message": "You must be in an organization to create a role"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+/* Brand: teal, matching the logo */
+:root {
+  --vp-c-brand-1: #0f766e;
+  --vp-c-brand-2: #0d9488;
+  --vp-c-brand-3: #0f766e;
+  --vp-c-brand-soft: rgba(20, 184, 166, 0.14);
+
+  --vp-button-brand-bg: #0f766e;
+  --vp-button-brand-hover-bg: #0d9488;
+  --vp-button-brand-active-bg: #115e59;
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-active-text: #fff;
+
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(120deg, #0f766e 20%, #14b8a6 60%, #5eead4);
+  --vp-home-hero-image-background-image: linear-gradient(-45deg, #14b8a6 50%, #0f766e 50%);
+  --vp-home-hero-image-filter: blur(44px);
+}
+
+.dark {
+  --vp-c-brand-1: #2dd4bf;
+  --vp-c-brand-2: #14b8a6;
+  --vp-c-brand-3: #0d9488;
+  --vp-c-brand-soft: rgba(45, 212, 191, 0.16);
+  --vp-button-brand-bg: #0d9488;
+  --vp-button-brand-hover-bg: #14b8a6;
+  --vp-button-brand-active-bg: #0f766e;
+}
+
+/* Arabic: a self-hosted, variable Arabic font (no third-party requests) */
+:root[lang="ar"] {
+  --vp-font-family-base: "Noto Sans Arabic Variable", "Segoe UI", Tahoma, "Noto Naskh Arabic", system-ui, sans-serif;
+}
+:root[lang="ar"] .vp-doc,
+:root[lang="ar"] .VPHero,
+:root[lang="ar"] .VPFeatures {
+  line-height: 1.9;
+}
+:root[lang="ar"] .vp-doc h1,
+:root[lang="ar"] .vp-doc h2,
+:root[lang="ar"] .vp-doc h3 {
+  letter-spacing: 0; /* positive tracking breaks Arabic letter joining */
+}
+
+/* Code is always left-to-right, even inside an RTL page */
+.vp-doc div[class*="language-"],
+.vp-doc div[class*="language-"] pre,
+.vp-doc .vp-code-group .tabs {
+  /* rtl:ignore */ direction: ltr;
+  /* rtl:ignore */ text-align: left;
+}
+.vp-doc code {
+  unicode-bidi: isolate; /* keeps `inline code` from reordering the surrounding Arabic sentence */
+}
+.vp-doc .custom-block .custom-block-title {
+  unicode-bidi: plaintext;
+}
+
+/* Tables: stay readable on narrow screens */
+.vp-doc table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Home page sections added below the feature grid */
+.VPHome .vp-doc {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+@media (min-width: 640px) {
+  .VPHome .vp-doc { padding: 0 48px 64px; }
+}
+@media (min-width: 960px) {
+  .VPHome .vp-doc { padding: 0 64px 80px; }
+}
+.VPHome .vp-doc h2 {
+  border-top: none;
+  margin-top: 56px;
+}

@@ -1,0 +1,109 @@
+{
+  "name": "better-auth-tarjim",
+  "version": "0.1.0",
+  "description": "Arabic error toasts for Better Auth. Tiny, typed, built for shadcn/ui (Sonner). Codes stay in sync with every Better Auth release.",
+  "keywords": [
+    "better-auth",
+    "arabic",
+    "i18n",
+    "translation",
+    "toast",
+    "sonner",
+    "shadcn",
+    "rtl",
+    "auth",
+    "react"
+  ],
+  "homepage": "https://raidsobhi.github.io/better-auth-tarjim/",
+  "bugs": "https://github.com/raidsobhi/better-auth-tarjim/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raidsobhi/better-auth-tarjim.git"
+  },
+  "license": "MIT",
+  "author": "raidsobhi <mintech@protonmail.com>",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./translate": {
+      "import": {
+        "types": "./dist/translate.d.ts",
+        "default": "./dist/translate.js"
+      },
+      "require": {
+        "types": "./dist/translate.d.cts",
+        "default": "./dist/translate.cjs"
+      }
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "sync": "node scripts/sync-codes.mjs",
+    "sync:check": "node scripts/sync-codes.mjs --check",
+    "size": "node scripts/size.mjs",
+    "check": "npm run sync:check && npm run typecheck && npm run test && npm run build && npm run size && npm run smoke",
+    "prepublishOnly": "npm run check",
+    "smoke": "node scripts/smoke.mjs",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "peerDependencies": {
+    "sonner": ">=1.4.0"
+  },
+  "peerDependenciesMeta": {
+    "sonner": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@better-auth/api-key": "^1.7.19",
+    "@better-auth/oauth-provider": "^1.7.19",
+    "@better-auth/passkey": "^1.7.19",
+    "@better-auth/scim": "^1.7.19",
+    "@better-auth/sso": "^1.7.19",
+    "@better-auth/stripe": "^1.7.19",
+    "@fontsource-variable/noto-sans-arabic": "^5.3.0",
+    "better-auth": "^1.7.19",
+    "postcss-rtlcss": "^6.0.0",
+    "sonner": "^2.0.8",
+    "tsup": "^9.0.0",
+    "typescript": "~5.9",
+    "vitepress": "^1.6.4",
+    "vitest": "^5.1.0",
+    "vue": "^3.5.45"
+  },
+  "overrides": {
+    "vitepress": {
+      "vite": "^6.4.4"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

@@ -1,0 +1,69 @@
+name: Sync Better Auth
+
+# Better Auth is the source of truth for error codes. This job checks for a new
+# release every day and opens a PR with the regenerated code list. If the release
+# added codes, the PR's type check fails until the Arabic translations are added.
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Upgrade Better Auth packages
+        run: >
+          npm install --save-dev
+          better-auth@latest
+          @better-auth/passkey@latest
+          @better-auth/sso@latest
+          @better-auth/api-key@latest
+          @better-auth/stripe@latest
+          @better-auth/oauth-provider@latest
+          @better-auth/scim@latest
+
+      - name: Regenerate error codes
+        run: npm run sync
+
+      - name: Check translations
+        id: typecheck
+        continue-on-error: true
+        run: npm run typecheck
+
+      - name: Read version
+        id: version
+        run: |
+          VERSION=$(node -p "JSON.parse(require('fs').readFileSync('node_modules/better-auth/package.json','utf8')).version")
+          echo "value=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          # A personal access token lets CI run on the PR. With the default
+          # GITHUB_TOKEN, GitHub does not trigger other workflows on it.
+          token: ${{ secrets.SYNC_PAT || secrets.GITHUB_TOKEN }}
+          branch: chore/sync-better-auth
+          delete-branch: true
+          commit-message: "chore: sync with Better Auth ${{ steps.version.outputs.value }}"
+          title: "chore: sync with Better Auth ${{ steps.version.outputs.value }}"
+          labels: dependencies
+          body: |
+            Automated sync with **Better Auth ${{ steps.version.outputs.value }}**.
+
+            Translation status: **${{ steps.typecheck.outcome == 'success' && 'complete, nothing to translate' || 'MISSING TRANSLATIONS' }}**
+
+            If translations are missing, run `npm run typecheck` on this branch to list the new codes,
+            add them to `src/ar.ts` (English meanings are in `docs/CODES.md`), and push. See CONTRIBUTING.md.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="better-auth-tarjim">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#14b8a6"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#g)"/>
+  <path d="M14 18.5A5.5 5.5 0 0 1 19.5 13h19a5.5 5.5 0 0 1 5.5 5.5v13a5.5 5.5 0 0 1-5.5 5.5H28l-8.5 7.2a1 1 0 0 1-1.7-.8V37h-.3A3.5 3.5 0 0 1 14 33.5v-15Z" fill="#fff" opacity=".96"/>
+  <path d="M24 22h14M24 27h9" stroke="#0f766e" stroke-width="2.4" stroke-linecap="round"/>
+  <circle cx="46" cy="43" r="8" fill="#fff"/>
+  <path d="M43 43h6M46 40v6" stroke="#0f766e" stroke-width="2" stroke-linecap="round"/>
+</svg>
