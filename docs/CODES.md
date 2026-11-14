@@ -1,6 +1,6 @@
 # Better Auth error codes
 
-Generated from Better Auth **1.7.22** by `npm run sync`. Do not edit by hand.
+Generated from Better Auth **1.7.23** by `npm run sync`. Do not edit by hand.
 
 | Code | Group | English message |
 | --- | --- | --- |
