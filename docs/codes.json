@@ -1,6 +1,6 @@
 {
-  "betterAuthVersion": "1.7.27",
-  "count": 262,
+  "betterAuthVersion": "1.7.28",
+  "count": 263,
   "codes": [
     {
       "code": "ACCESS_DENIED",
@@ -211,6 +211,11 @@
       "code": "FAILED_TO_DELETE_ANONYMOUS_USER_SESSIONS",
       "group": "anonymous",
       "message": "Failed to delete anonymous user sessions"
+    },
+    {
+      "code": "FAILED_TO_DELETE_USER",
+      "group": "base",
+      "message": "Failed to delete user"
     },
     {
       "code": "FAILED_TO_FETCH_PLANS",
