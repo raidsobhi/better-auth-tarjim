@@ -1,6 +1,6 @@
 # Better Auth error codes
 
-Generated from Better Auth **1.7.27** by `npm run sync`. Do not edit by hand.
+Generated from Better Auth **1.7.28** by `npm run sync`. Do not edit by hand.
 
 | Code | Group | English message |
 | --- | --- | --- |
@@ -46,6 +46,7 @@ Generated from Better Auth **1.7.27** by `npm run sync`. Do not edit by hand.
 | `FAILED_TO_CREATE_VERIFICATION` | base | Unable to create verification |
 | `FAILED_TO_DELETE_ANONYMOUS_USER` | anonymous | Failed to delete anonymous user |
 | `FAILED_TO_DELETE_ANONYMOUS_USER_SESSIONS` | anonymous | Failed to delete anonymous user sessions |
+| `FAILED_TO_DELETE_USER` | base | Failed to delete user |
 | `FAILED_TO_FETCH_PLANS` | stripe | Failed to fetch plans |
 | `FAILED_TO_GET_SESSION` | base | Failed to get session |
 | `FAILED_TO_GET_USER_INFO` | base | Failed to get user info |
